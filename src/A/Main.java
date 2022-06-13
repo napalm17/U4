@@ -46,7 +46,7 @@ public class Main {
      */
     private static void run(int n , int p , int q) {
         LucasSeries lucasSeries = new LucasSeries();
-        long[] series = lucasSeries.getSeries(n + 1, p, q); // n+1 because the nth element is included in the series.
+        long[] series = lucasSeries.getSeries(n, p, q);
         for (long element : series) {
             System.out.println(element);
         }

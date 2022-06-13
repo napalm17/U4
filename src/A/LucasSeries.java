@@ -21,10 +21,10 @@ public class LucasSeries {
      * @return an integer array that contains the elements of the Lucas-Series.
      */
     public long[] getSeries(int n, int p, int q) {
-        long[] l = new long[n];
+        long[] l = new long[n + 1];
         l[0] = 0; // Set the first two elements manually.
         l[1] = 1;
-        for (int i = 2; i < n; i++) {
+        for (int i = 2; i <= n; i++) {
             l[i] = p * l[i - 1] - q * l[i - 2]; // Apply the given formula.
         }
         return l;
