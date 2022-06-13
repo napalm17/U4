@@ -1,3 +1,5 @@
+package A;
+
 public class LucasSeries {
     public long[] getSeries(int n, int p, int q) {
         long[] l = new long[n];
